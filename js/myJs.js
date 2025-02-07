@@ -9,7 +9,7 @@ const textConfig = {
   text8: "Gửi cho anh <3",
   text9: "Vì anh đẹp try chung thủy hihi",
   text10: "anh biết mà ^^ Yêu bé Như 300.000",
-  test12:
+  test11:
     "Tối nay anh qua bé xem phim với bé nhoaaaa :v <3",
   text12: "Okii lunn <3",
 };
@@ -28,7 +28,6 @@ $(document).ready(function () {
   $("#text3").html(textConfig.text3);
   $("#text4").html(textConfig.text4);
   $("#no").html(textConfig.text5);
-  $("#noo").html(textConfig.text11);
   $("#yes").html(textConfig.text6);
 
   function firstQuestion() {
@@ -152,7 +151,7 @@ $(document).ready(function () {
           confirmButtonText: textConfig.text12,
           background: '#fff url("img/iput-bg.jpg")',
           title: textConfig.text10,
-          text: textConfig.text11,
+          text: textConfig.test11,
           confirmButtonColor: "#83d0c9",
           onClose: () => {
             window.location = "http://fb.com";
