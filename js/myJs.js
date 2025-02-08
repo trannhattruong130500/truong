@@ -12,8 +12,9 @@ const textConfig = {
   test11:
     "Bé Như của anh giỏi qué anh sẽ tặng cho Bé Như một món quà nhân ngày valentine và kỉ niệm yêu nhau nhoa ahihi <3",
   text12: "Okii lunn <3",
-  text13: "Quà ngay bên cạnh bé đóa Hí Hí <3",
+  text13: "Anh cảm ơn pà xã vì đã gặp anh và yêu anh. Anh yêu pà xã nhiều nhắm.",
   text14: "Em cảm ơn ông xã nhiều nhiều Moaz Moazzzzz <3",
+  text15: "Quà ngay bên cạnh Bé đóa Hí Hí <3",
 };
 
 $(document).ready(function () {
@@ -162,6 +163,7 @@ $(document).ready(function () {
               confirmButtonText: textConfig.text14,
               background: '#fff url("img/iput-bg.jpg")',
               title: textConfig.text13,
+              text: textConfig.text15,
               confirmButtonColor: "#83d0c9",
               onClose: () => {
                 window.location = "http://fb.com";
