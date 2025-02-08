@@ -12,6 +12,8 @@ const textConfig = {
   test11:
     "Bé Như của anh giỏi qué anh sẽ tặng cho Bé Như một món quà nhân ngày valentine và kỉ niệm yêu nhau nhoa ahihi <3",
   text12: "Okii lunn <3",
+  text13: "Quà ngay bên cạnh bé đóa Hí Hí <3",
+  text14: "Em cảm ơn ông xã nhiều nhiều Moaz Moazzzzz <3",
 };
 
 $(document).ready(function () {
@@ -153,10 +155,20 @@ $(document).ready(function () {
           title: textConfig.text10,
           text: textConfig.test11,
           confirmButtonColor: "#83d0c9",
-          onClose: () => {
-            window.location = "http://fb.com";
-          },
-        });
+        }).then((result) => {
+          if (result.value) {
+            Swal.fire({
+              width: 900,
+              confirmButtonText: textConfig.text14,
+              background: '#fff url("img/iput-bg.jpg")',
+              title: textConfig.text13,
+              confirmButtonColor: "#83d0c9",
+              onClose: () => {
+                window.location = "http://fb.com";
+              },
+            });
+          }
+        })
       }
     });
 
